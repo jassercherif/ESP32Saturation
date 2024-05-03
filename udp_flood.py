@@ -10,7 +10,7 @@ def udp_flood(target_ip, target_port):
 
 if __name__ == '__main__':
     target_ip = "192.168.1.100"  # Remplacez par l'adresse IP de la cible
-    target_port = 80  # Port cible (HTTP)
+    target_port = 80  # Target Port (HTTP)
 
     udp_flood(target_ip, target_port)
 
