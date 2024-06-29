@@ -16,6 +16,6 @@ def icmp_flood(target_ip):
 
 if __name__ == '__main__':
     target_ip = "192.168.1.100"    # Replace with the target's IP address
-    
+     
     icmp_flood(target_ip)
 
